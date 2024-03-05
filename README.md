@@ -82,3 +82,48 @@ Values include:
 nowrap: All flex items are forced onto a single line.
 wrap: Flex items wrap onto multiple lines if needed.
 wrap-reverse: Flex items wrap onto multiple lines in reverse order if needed.
+
+<Br>
+
+Question.3:-
+<br>
+Answer:-
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex -box in css</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+     }
+        .body{
+           height:100vh;
+           width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+      #box{
+            height: 100px;
+            width:100px;
+            background-color:green;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+         <div id="box">
+      
+    </div>
+</div>
+   
+</body>
+</html>
+<br>
+Question.4:-
