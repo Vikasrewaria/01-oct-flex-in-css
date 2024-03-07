@@ -126,4 +126,157 @@ Answer:-
 </body>
 </html>
 <br>
-Question.4:-
+Question.4:- A Client of yours wants to add a pricig section on their website to showcase their newly introduced Premium Plans.
+<br>
+Answers:- 
+<Br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plans</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css">
+   
+</head>
+<body><section class="pricing-section">
+    <div class="card-1">
+         <h1 class="plan-name">Free Plan</h1>
+            <p class="plan-for">for personal</p>
+<p class="price">$0</p>       
+ <p class="features"><i class="fa-solid fa-circle-check"></i> 1 Users</p>
+ <p class="features"><i class="fa-solid fa-circle-check"></i> 4 website</p>
+ <p class="features"><i class="fa-solid fa-circle-check"></i> Responsive Website</p>
+ <p class="features"><i class="fa-solid fa-circle-check"></i> Free SSL</p>  
+         
+         <div class="subscribe-button"><button class="subscribe-now">Subscribe</button></div>
+
+    </div>
+
+    <!-- card 2 -->
+    <div class="card-2"> 
+        <h1 class="plan-name">Basic Plan</h1>
+        <p class="plan-for">for Small Buisnesss</p>
+<p class="price">$29</p>       
+<p class="features"><i class="fa-solid fa-circle-check"></i> 4 Users</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> 10 Web mails</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> Responsive Website</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> Free SSL</p>  
+     
+            <div class="subscribe-button">
+                <button class="subscribe-now  dark-btn">Subscribe</button>
+            </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="card-3"> <h1 class="plan-name">Pro Plan</h1>
+        <p class="plan-for">for enterprise</p>
+<p class="price">$49</p>       
+<p class="features"><i class="fa-solid fa-circle-check"></i> Unlimited Users</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> Unlimited Web mails</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> Responsive Website</p>
+<p class="features"><i class="fa-solid fa-circle-check"></i> Free SSL + SEO</p>  
+     
+            <div class="subscribe-button">
+                <button class="subscribe-now">Subscribe</button>
+            </div></div>
+
+
+</section>
+     
+</body>
+</html>
+
+<br>
+<br>
+Style {
+body,p,h1,h2,h3 {
+ margin:0;
+    padding: 0;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.pricing-section{
+    width: 80vw; 
+height: 427px;
+margin-top: 25px;
+margin-left: -8px;
+padding: 32px, 48px, 32px, 48px;
+background-color: #F4F2FD;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+
+/* card 1 */
+.card-1{
+    height:300px;
+    width:220px;
+   border-radius:8px;
+   padding: 35px;
+  gap: 20px;
+  color: #202842;
+   background-color: white;
+}
+.subscribe-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;;
+    border-radius: 24px;
+    font-size: 20px;
+    border-color:transparent;
+    height: 40px;
+    width: 160px;  
+}
+.price{
+    font-size:200%;
+    font-weight: bold;
+    margin:20px 0px 20px;
+}
+.plan-name{
+    font-size: 30px;
+}
+
+        /* card-2 */
+
+.card-2{
+    height:350px;
+    width: 220px;
+    border-radius:4%;
+    background-color:#202842;
+    padding: 40px;
+    color:white;
+    /* display: flex; */
+    
+}
+.subscribe-now {
+    background-color:#202842 ;
+    color:white
+}
+.dark-btn{
+    background-color: white;
+    color:#202842;
+    align-self: flex-end;
+}
+/* card-3 */
+
+.card-3{
+    height: 300px;
+    width: 220px;
+    border-radius:8px;
+    padding:32px;
+    background-color: #FFFFFF;
+   color: #202842;
+    }
+    }
