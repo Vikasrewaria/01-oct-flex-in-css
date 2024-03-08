@@ -280,3 +280,282 @@ justify-content: space-evenly;
    color: #202842;
     }
     }
+
+Question:5 :- Home page of the Irctc
+<br>
+Answer:-<br>
+index.html:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <section>
+   
+        <div class="left">
+            <nav>
+                <div class="logo-container">
+                     <div class="logo-1 logo "> </div>
+                <div class="logo-2 logo"> </div>
+            </div>
+               <div class="nav-button"> 
+                <ul>
+                    <li>Ask Disha</li>
+                    <li>Contact us</li>
+                    <li>Alert</li>
+                </ul>        
+                    <ul>
+                        <li> <button>Login</button></li>
+                        <li> <button>Register</button></li>
+                        <li> <button>Agent Lover</button></li>
+                    </ul> 
+                </div>
+                
+            </nav>
+             
+        <div class="hero-section">
+             <h1> Indian Railways </h1>
+            <div class="slogan" > 
+                <p id="s-1">Safety</p> <p id="s-2">Security</p> <p id="s-3">Punctuality</p>
+            </div>
+        </div>
+           
+        <div class="booking-bar">
+            <div  class="booking ticket"><i class="fa-solid fa-ticket"></i> BOOK Ticket</div>
+        <div class="booking pnr"><i class="fa-solid fa-check"></i> PNR status</div>
+        <div class="booking chart">  <i class="fa-solid fa-chart-simple"></i> Charts / Vacancy </div>
+        </div>
+        <!-- train route  -->
+        <div class="route">
+            
+            <div class="start">
+                <label for="from "  class="font">From</label>
+             <select>
+                <option value="All"></option>
+                <option value="banglore">Bangglore</option>
+                <option value="Kasaragod">Kasaragod</option>
+             </select><div class="train"> 
+                <i class="fa-solid fa-train"></i>
+                <p class="station">Bangalore</p>
+            </div>
+                <p class="font">KSR-Banglore</p>
+                
+            </div>
+            <div .class="logo-direction"><i class="fa-regular fa-arrow-right-arrow-left"></i></div>
+
+            <!-- destination point -->
+               
+                <div class="destination">
+                    <label for="from" class="font">To</label>
+                 <select>
+                    <option value="All"></option>
+                    <option value="Kasaragod">Kasaragod</option>
+                    <option value="banglore">Bangglore</option>
+                  
+                 </select>
+                <div class="train">
+                     <i class="fa-solid fa-train"></i>
+                    <p class="station">Kasaragod</p>
+                </div>
+                    <p class="font">KSR-Banglore</p>
+                </div>
+        </div>
+
+            <!-- Date,class and seat Type -->
+            
+            <div class="booking-detail">
+                <div class="date">
+                <label for="date" class="font"> Date</label>       
+               <div class="train">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="station">01 Aug 23</p>
+               </div>
+               <p class="font">Tuesday</p>  </div>
+
+               <!-- class detail box  -->
+             
+               <div class="boggie"> 
+                 <label for="Class" class="font"> Class</label>
+                    <div class="train">
+                        <i class="fa-solid fa-ellipsis"></i>                     
+                           <p class="station">3A</p> 
+                    </div>
+                    <p class="font"> AC 3 tier</p></div>
+
+
+                    <!-- seat details box -->
+                    <div class="seat">
+                        <label for="seat" class="font">seat</label>
+                        <div class="train">
+                            <i class="fa-solid fa-dice-four"></i>
+                            <p class="station">TATKAL</p>
+                        </div>
+                        <P class="font">AC 3 Tier </P>
+                    </div>
+           </div>
+           <div >
+            <button class="search">Search Train</button> 
+        </div>
+     
+           
+
+
+
+
+
+        </div>
+
+        <div class="right"></div>
+    </section>
+</body>
+</html>
+
+style.css:- *{
+    margin: 0;
+    padding:0;
+}
+section{
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100vh;
+    margin: 20px;
+}
+nav{
+    display: flex; 
+    
+gap: 250px;
+} 
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.logo-container{
+    display: flex;
+}
+.logo{
+    height:50px;
+    width:50px; 
+    background-size: cover;
+}
+.logo-1{
+    background-image: url(https://www.irctc.co.in/nget/assets/images/logo.png);
+    background-size:cover;
+    margin-right:20px;
+}
+.logo-2{
+    background-image: url( https://upload.wikimedia.org/wikipedia/fr/e/ed/Indian_Railway.png);
+    background-size:cover;
+}
+
+
+/**main content**/
+
+.hero-section h1{
+    font-size: xx-large;
+   
+    margin-top:50px;
+}
+.slogan{
+    display: flex;
+   gap: 50px;
+   font-size: 1.3rem;
+  
+}
+#s-1{
+    color:green;
+   
+}
+#s-2{
+    color:orange;
+}
+#s-3{
+    color:blue;
+}
+/* booking section  */
+.booking-bar{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.booking {
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #eee4e4;
+    border-radius: 4%;
+    padding: 5px;
+
+}
+.ticket{
+    background-color: rgb(8, 8, 156);
+    color: white;
+}
+/* route section  */
+.route{
+    height: 100px;
+width: 80%;
+border: 2px solid #eee4e4;
+margin-top: 40px;
+display: flex;
+justify-content:space-around;
+align-items: center;
+   
+}
+.train{
+    display: flex;
+    align-items: center ;
+    margin-left:-15px;
+}
+.station{
+    font-size: 2rem;
+}
+
+.font{
+    color:#595858;
+}
+
+/* Bookin details */
+.booking-detail{
+    height:100px;
+    width: 80%;
+    border: 2px solid #eee4e4 ;
+    margin-top:30px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+   .boggie{
+        height: fit-content;
+        width: fit-content;
+        flex-direction: column;
+    }
+.boggie i{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.search{
+    height: 30px;
+    width:80%;
+    background-color: green;
+     margin-top:50px;
+     text-align: center;
+     color: white;
+     te
+}
+
+
+/* Right section  */
+.right{
+width: 50%;
+height:fill-content;
+background-image: url(https://akm-img-a-in.tosshub.com/aajtak/images/story/202208/irctc-sixteen_nine.jpg?size=948:533);
+}
